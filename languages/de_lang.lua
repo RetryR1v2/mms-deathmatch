@@ -1,0 +1,21 @@
+Locales["de_lang"] = {
+    DeathMatch = 'DeathMatch Event',
+    OpenBoard = 'DeathMatch Öffnen',
+    DeathmatchBoardHeader = 'Deathmatch',
+    DeathmatchBoardSubHeader = 'The Heartland Revengers',
+    CloseDeathmatchBoard = 'Schließen',
+    Register = 'Registrieren',
+    Leaderboard = 'Bestenliste',
+    RegistredUsers = 'Registrierte Benutzer: ',
+    KilledBy = ' Getötet Von: ',
+    Timer = 'Verbleibende Zeit: ',
+    TimerTillStart = 'Zeit bis zum Start: ',
+    ScoreBoardHeader = 'Deathmatch Bestenliste',
+    NoHighscoreYet = 'Keine Bestenliste!',
+    GotKills = ' Kills: ',
+    GotDeaths = ' Tode: ',
+    NotEnoghPlayers = 'Nicht genug Teilnehmer für das Event.',
+    Carefull = 'Du Verlierst deine: ',
+    CantRegister = 'Du kannst dich nicht Registrieren Lege ab: ',
+    CantRegisterWith = ' dabei ? Weglegen!'
+}
