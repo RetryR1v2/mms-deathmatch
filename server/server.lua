@@ -227,10 +227,16 @@ function EndDeathmatch()
     DeathmatchCounter = 0
     for h,v in ipairs(PlayerPeds) do
         SetEntityCoords(v,Config.EndSpawnCoords.x,Config.EndSpawnCoords.y,Config.EndSpawnCoords.z - 0.8,true,true,false,true)
+        SetPlayerInvincible(v,true)
     end
+    Wait(500)
     for _, player in ipairs(GetPlayers()) do
         local RegistredAmount = 0
         TriggerClientEvent('mms-deathmatch:client:AddPlayer', player,RegistredAmount)
+    end
+    for h,v in ipairs(RegistredUsers) do
+        VORPcore.Player.Revive(v)
+        SetPlayerInvincible(v,false)
     end
     ClearTables()
 end

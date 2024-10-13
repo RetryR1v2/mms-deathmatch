@@ -5,7 +5,6 @@ local FeatherMenu =  exports['feather-menu'].initiate()
 local DMBlips = {}
 local DMPeds = {}
 local RegistredUsers = 0
-local Dies = 0
 local EndDeathmatch = false
 local ScoreboardOpened = false
 
@@ -301,11 +300,9 @@ AddEventHandler('mms-deathmatch:client:CheckDeath',function(PlayerPed)
                         killerServerId = GetPlayerServerId(killer)
                     end
                 end
-                --local deathCause = GetPedCauseOfDeath(PlayerPedId())
-            Dies = Dies + 1
-            Citizen.Wait(2000)
+                --local deathCause = GetPedCauseOfDeath(PlayerPedId())  -- Check Wich gun Not needed 
             TriggerServerEvent('mms-deathmatch:server:IDied',PlayerPed,killerServerId)
-            Citizen.Wait(5000)
+            Citizen.Wait(8000)
             TriggerServerEvent('mms-deathmatch:server:Respawn',PlayerPed)
         end
     end

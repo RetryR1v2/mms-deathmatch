@@ -13,7 +13,10 @@
 # Changelog
 
 - 1.1.0 Initial Release Version
-
+- 1.1.1 Beta Realease 
+- Added Spanw Protection
+- Added After Game Protection
+- Fixed some Minor Bugs
 
 # installation 
 
