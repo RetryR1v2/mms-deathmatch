@@ -284,7 +284,7 @@ end)
 
 RegisterNetEvent('mms-deathmatch:client:CheckDeath')
 AddEventHandler('mms-deathmatch:client:CheckDeath',function(PlayerPed)
-    Citizen.Wait(100)
+    Citizen.Wait(500)
     VORPcore.instancePlayers(Config.RoutingNumber)
     while not EndDeathmatch do
         local MyPlayerPedId = PlayerPedId()
@@ -300,9 +300,12 @@ AddEventHandler('mms-deathmatch:client:CheckDeath',function(PlayerPed)
                         killerServerId = GetPlayerServerId(killer)
                     end
                 end
+
+            print('Ich Bin Tot')
                 --local deathCause = GetPedCauseOfDeath(PlayerPedId())  -- Check Wich gun Not needed 
-            TriggerServerEvent('mms-deathmatch:server:IDied',PlayerPed,killerServerId)
             Citizen.Wait(8000)
+            print('Jetzt Wiederbeleben und Tot / Kill Werten')
+            TriggerServerEvent('mms-deathmatch:server:IDied',PlayerPed,killerServerId)
             TriggerServerEvent('mms-deathmatch:server:Respawn',PlayerPed)
         end
     end

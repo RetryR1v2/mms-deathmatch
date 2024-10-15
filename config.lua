@@ -2,6 +2,8 @@ Config = {}
 
 Config.defaultlang = "de_lang"
 
+
+Config.OldVorp = false  -- if you Running an Outaded VORP Core Version
 -- Webhook Settings
 
 Config.WebHook = false
@@ -16,9 +18,9 @@ Config.WHAvatar = '' -- must be 30x30px
 
 -- Script Settings
 
-Config.StartTimer = 15 -- Time in Sec
+Config.StartTimer = 30 -- Time in Sec
 Config.DeathmatchArea = vector3(-4209.43, -3457.78, 37.33)
-Config.GameTimer = 180
+Config.GameTimer = 300
 Config.EndSpawnCoords = vector3(-4180.0, -3409.48, 37.14)
 Config.MinUsersToStart = 2
 Config.RoutingNumber = 22222  -- DO NOT TOUCH

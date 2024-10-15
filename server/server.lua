@@ -178,7 +178,13 @@ end)
 
 RegisterServerEvent('mms-deathmatch:server:Respawn',function (PlayerPed)
     local src = source
-    VORPcore.Player.Revive(src)
+    if Config.OldVorp then
+        TriggerClientEvent('vorp:resurrectPlayer',src)
+    else
+        VORPcore.Player.Revive(src)
+    end
+
+    Citizen.Wait(200)
     if DeathmatchStarted then 
         local MaxRandom = #Config.DeathmatchSpawns
         local Random = math.random(1,MaxRandom)

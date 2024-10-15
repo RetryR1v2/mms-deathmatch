@@ -17,6 +17,8 @@
 - Added Spanw Protection
 - Added After Game Protection
 - Fixed some Minor Bugs
+- 1.1.2 Fixed Wrongt Death Count.
+- Now Supporting OLD VorpCore Revive 
 
 # installation 
 
